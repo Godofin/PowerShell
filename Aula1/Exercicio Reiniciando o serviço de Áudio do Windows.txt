@@ -1,0 +1,6 @@
+# Reiniciar um serviço do Windows pode ser um paliativo para problemas no sistema.
+# Algumas vezes podemos ter problemas com serviços providos pelo próprio sistema operacional, como o serviço de áudio - chamado AudioSrv.
+
+$servico = Get-Service AudioSRV
+$servico.Stop()
+$servico.Start()
